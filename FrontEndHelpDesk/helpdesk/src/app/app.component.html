@@ -1,10 +1,10 @@
-<app-header></app-header>
-<app-menu></app-menu>
+<app-header [hidden] = '!showTemplate'></app-header>
+<app-menu [hidden] = '!showTemplate'></app-menu>
 <div class="content-wrapper">
     <section class="content-header">
-        <p>Content here...</p>
+        <router-outlet></router-outlet>
     </section>
     <section class="content">
     </section>
 </div>    
-<app-footer></app-footer>
+<app-footer [hidden] = '!showTemplate'></app-footer>
